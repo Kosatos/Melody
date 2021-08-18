@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Regular Regular'), local('BebasNeueRegular'),
+        url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+        url('../fonts/BebasNeueRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -60,6 +70,73 @@ li {
 navbar-tel {
     font-size: 17px;
     font-weight: 700;
+}
+
+.main {
+	max-width: 1280px;
+	display: flex;
+	margin: auto;
+	padding-top: 54px;
+}
+
+.main-image path{
+	opacity: 0;
+	cursor: pointer;
+}
+
+.main-image path:hover{
+	opacity: 1;
+}
+
+.main-info {
+	padding-top: 68px;
+	padding-bottom: 66px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-title {
+	color: #635854;
+	text-transform: uppercase;
+	font-family: Bebas Neue;
+	font-weight: 400;
+	font-size: 37px;
+}
+
+.counter-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.counter-button {
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.counter-arrow-down {
+	transform: rotateX(180deg);
+}
+
+.counter {
+	color: #635854;
+	font-family: Bebas Neue;
+	font-weight: 400;
+	padding: 20px 0 25px;
+	font-size: 120px;
+}
+
+.button-primary {
+	border: none;
+	background: #3596F5;
+	border-radius: 6px;
+	color: #fff;
+	padding: 16px 36px;
+	cursor: pointer;
 }
 
 
