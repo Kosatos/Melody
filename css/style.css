@@ -37,7 +37,9 @@ li {
 }
 
 .navbar	{
-	max-width: 1280px;
+	max-width: 1300px;
+	padding-left: 10px;
+	padding-right: 10px;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
@@ -73,18 +75,24 @@ navbar-tel {
 }
 
 .main {
-	max-width: 1280px;
+	max-width: 1300px;
+	padding-left: 10px;
+	padding-right: 10px;
 	display: flex;
 	margin: auto;
 	padding-top: 54px;
 }
 
-.main-image path{
+.home-image path{
 	opacity: 0;
 	cursor: pointer;
 }
 
-.main-image path:hover{
+.home-image path:hover{
+	opacity: 1;
+}
+
+path.current-floor {
 	opacity: 1;
 }
 
