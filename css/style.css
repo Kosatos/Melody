@@ -42,7 +42,7 @@ li {
 	justify-content: space-between;
 	text-align: center;
 	align-items: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .logo {
@@ -90,7 +90,7 @@ navbar-tel {
 	max-width: 1470px;
 	padding: 55px 15px 100px;
 	display: flex;
-	margin: auto;
+	margin: 0 auto;
 }
 
 .home-image path{
@@ -275,6 +275,7 @@ path.current-flat {
 }
 
 .footer-container {
+	margin: 0 auto;
 	max-width: 1470px;
 	padding: 55px 15px;
 	display: flex;
