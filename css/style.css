@@ -30,38 +30,50 @@ li {
 }
 
 .header {
-	padding-top: 12px;
-	padding-bottom: 12px;
 	background-color: #635854;
 	border-bottom: 4px solid #3596F5;
 }
 
 .navbar	{
-	max-width: 1300px;
-	padding-left: 10px;
-	padding-right: 10px;
+	max-width: 1470px;
+	padding-left: 15px;
+	padding-right: 15px;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
+	align-items: center;
     margin: auto;
+}
+
+.logo {
+	padding-top: 8px;
 }
 
 .navbar-menu {
     display: flex;
     text-align: center;
+	color: #fff;
 }
 
 .navbar-item {
-    margin: 0 40px;
+	height: 56px;
+    padding: 0 40px;
     font-size: 16px;
     line-height: 1.2em;
+	display: flex;
+	align-items: center;
+	transition: background-color 0.3s;
 }   
 
-.navbar-contacts {
+.navbar-item:hover {
+	background-color: #3596F5;
+}
+
+.contacts {
     display: flex;
     flex-direction: column;
-    text-align: end;
-    
+    text-align: end; 
+	color: #fff;   
 }
 
 .navbar-text {
@@ -75,12 +87,10 @@ navbar-tel {
 }
 
 .main {
-	max-width: 1300px;
-	padding-left: 10px;
-	padding-right: 10px;
+	max-width: 1470px;
+	padding: 55px 15px 100px;
 	display: flex;
 	margin: auto;
-	padding-top: 54px;
 }
 
 .home-image path{
@@ -109,7 +119,7 @@ path.current-floor {
 .main-title {
 	color: #635854;
 	text-transform: uppercase;
-	font-family: Bebas Neue;
+	font-family: 'Bebas Neue', sans-serif;
 	font-weight: 400;
 	font-size: 37px;
 }
@@ -130,9 +140,9 @@ path.current-floor {
 	transform: rotateX(180deg);
 }
 
-.counter {
+.floor-counter {
 	color: #635854;
-	font-family: Bebas Neue;
+	font-family: 'Bebas Neue', sans-serif;
 	font-weight: 400;
 	padding: 20px 0 25px;
 	font-size: 120px;
@@ -146,6 +156,172 @@ path.current-floor {
 	padding: 16px 36px;
 	cursor: pointer;
 }
+
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: scale(0);
+	transition: opacity 0.3s;
+}
+
+.open-modal {
+	transform: scale(1);
+	opacity: 1;
+}
+
+.modal-dialog {
+	position: relative;
+	max-width: 1000px;
+	min-height: 565px;
+	background-color: #fff;
+	flex-grow: 1;
+	display: flex;
+	opacity: 0;
+	transform: translateY(-10%);
+	transition: transform 0.3s;
+	transition: 0.3s;
+}
+
+.open-modal > .modal-dialog {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.modal-close-button {
+	position: absolute;
+	top: 38px;
+	right: 27px;
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+	transform: translateY(0%);
+	transition: transform 0.3s;
+}
+
+.modal-close-button:hover {
+	transform: translateY(-10%);
+}
+.modal-image {
+	width: 60%;
+	background-color: #ebebeb;
+	padding: 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-title {
+	font-family: 'Bebas Neue', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+
+.flats path {
+	opacity: 0;
+	cursor: pointer;
+}
+
+.flats path:hover {
+	opacity: 1;
+}
+
+path.current-flat {
+	opacity: 1;
+}
+
+.modal-info {
+	padding: 50px 46px;
+}
+
+.flats-list {
+	margin-top: 55px;
+}
+
+.flats-item {
+	margin-bottom: 10px;
+}
+
+.flats-link {
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.flats-link:hover {
+	color: #3596F5;
+	text-decoration: underline;
+}
+
+.modal-alert {
+	margin-top: 55px;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.footer {
+	background-color: #D7D7D7;
+	border-top: 4px solid #3596F5;
+}
+
+.footer-container {
+	max-width: 1470px;
+	padding: 55px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-leftside {
+	display: flex;
+	align-items: center;
+}
+
+.footer-leftside > .contacts {
+	color: #635854;
+	margin-left: 37px;
+	text-align: start; 
+}
+
+.social-icon-list {
+	display: flex;
+	margin-left: 60px;
+}
+
+.social-icon-item {
+	margin-right: 15px;
+}
+
+.footer-nav-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-nav-item {
+	margin-left: 20px;
+}
+
+.footer-nav-link {
+	color: #635854;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+
+
+
 
 
 
